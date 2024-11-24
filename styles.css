@@ -1,9 +1,12 @@
+/* La partie du header va concerner tout ce qui est en rapport avec la barre de navigation */
+/* Ici on change la couleur du fond et de la police du texte */
 header {
     color: white;
     background: rgb(53, 53, 53);
     padding: 1em;
 }
 
+/* Cette partie nous sert à ce que notre barre de navigation soit centrée dans la page */
 header ul {
     display: flex;
     justify-content: center;
@@ -11,12 +14,16 @@ header ul {
     list-style: none;
 }
 
+/* On met le texte en gras pour donner une importance à la barre de navigation et on enlève la ligne
+ qui apparaît en dessous de chaque mot de la barre de nav */
 header a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
+/* Ici on va définir la hauteur des lignes entre-elles avec l'attribut "line-height"
+ et on définit la police qui apparaîtra sur le site et on ajoute une couleur de fond avec "background-color"*/
 body {
     margin: 0;
     padding: 0;
@@ -25,39 +32,38 @@ body {
     background-color: aliceblue;
 }
 
+/* On va laisser une marge sur le texte pour pas que le texte colle aux bords de la page */
 .section {
     padding: 2em;
-    margin: auto;
 }
 
+/* On va centrer les titres qui sont en gras */
 h1,
 h2,
 h3 {
     text-align: center;
 }
 
+/* On créé une grid qui va occuper l'espace disponible avec l'attribut "auto-fit" que l'on va répéter tout le temps avec "repeat" */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+/* On créé une petite zone pour pouvoir mettre les projets que l'on a déjà réalisé */
 .project {
     background: white;
     padding: 1em;
     border-radius: 8px;
 }
 
-.contact {
-    background: white;
-    padding: 1em;
-    border-radius: 8px;
-}
-
+/* On va centrer tous les paragraphes */
 p {
     display: flex;
     justify-content: center;
 }
 
+/* Pareillement qu'en haut mais pour les listes */
 ul>li {
     display: flex;
     justify-content: center;
@@ -65,6 +71,7 @@ ul>li {
     margin: 0;
 }
 
+/* On créé une zone pour délimiter la page, on met un background d'une couleur différente */
 footer {
     text-align: center;
     padding: 1em;
@@ -72,6 +79,7 @@ footer {
     color: white;
 }
 
+/* Ici cette partie sert à ce qu'on puisse consulter le CV numérique sur une version téléphone */
 @media screen and (min-width : 1px) and (max-width: 374px) {
     header ul {
         flex-direction: column;
@@ -79,6 +87,7 @@ footer {
     }
 }
 
+/* On réduit l'image avec "width" et le "display: block" sert à centrer la photo */
 img {
     width: 150px;
     display: block;
