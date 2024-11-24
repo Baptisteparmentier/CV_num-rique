@@ -85,6 +85,10 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* On réduit l'image avec "width" et le "display: block" sert à centrer la photo */
